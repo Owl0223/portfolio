@@ -29,22 +29,27 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/Owl0223",
+    link: process.env.GITHUB,
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/in/chiranjeev-singh-563ba2166/",
+    name: "X",
+    icon: "x",
+    link: process.env.X,
   },
-  {
-    name: "Instagram",
-    icon: "ig",
-    link: "https://www.instagram.com/chiranjeev.secdev/",
-  },
+  // {
+  //   name: "LinkedIn",
+  //   icon: "linkedin",
+  //   link: "https://www.linkedin.com/in/chiranjeev-singh-563ba2166/",
+  // },
+  // {
+  //   name: "Instagram",
+  //   icon: "ig",
+  //   link: "https://www.instagram.com/chiranjeev.secdev/",
+  // },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:dev3chiranjeev@gmail.com",
+    link: process.env.EMAIL,
   },
 ];
 
@@ -75,7 +80,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: process.env.CAL,
   },
   intro: {
     display: true,
@@ -132,6 +137,10 @@ const about = {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
+      {
+        name: "The Real World",
+        description: <>Studied the best methods of overdelivering and business management.</>,
+      },
       {
         name: "University of Delhi",
         description: <>Studied Physical Sciences with Computer Science.</>,
